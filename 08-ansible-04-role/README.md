@@ -19,7 +19,9 @@
    ```
 
 2. При помощи `ansible-galaxy` скачать себе эту роль.
+![img.png](img.png)
 3. Создать новый каталог с ролью при помощи `ansible-galaxy role init vector-role`.
+
 4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
 5. Перенести нужные шаблоны конфигов в `templates`.
 6. Описать в `README.md` обе роли и их параметры.
