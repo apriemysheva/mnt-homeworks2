@@ -47,7 +47,7 @@
 - lighthouse (установка lighthouse) 
 ```
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-03-yandex` на фиксирующий коммит, в ответ предоставьте ссылку на него.
-
+https://github.com/apriemysheva/mnt-homeworks2/tree/main/08-ansible-03-yandex/playbook
 ---
 
 ### Как оформить ДЗ?
