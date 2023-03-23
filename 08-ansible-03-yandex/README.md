@@ -23,6 +23,29 @@
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 ![img_8.png](img_8.png)
 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
+```html
+Подготовленные ВМ:    
+
+| Hostname          | Public IP     | Software           |
+|-------------------|---------------|--------------------|
+| clickhouse-01     | 51.250.78.123 | Clickhouse         |
+| vector-01         | 51.250.70.13  | Vector             |
+| lighthouse-01     | 51.250.88.196 | Lighthouse & Nginx | 
+
+Каталог playbook/inventory/prod содержит описание среды prod.
+
+В каталоге playbook/inventory/prod расположен каталог group_vars, в котором содержится описание переменных для среды prod.
+
+В каталоге playbook/inventory/prod расположен файл hosts.yml, в котором описаны хосты, к которым будет применен playbook.
+
+В каталоге playbook/template распложены jinja-файлы шаблонов для настройки разворачиваемых сервисов в процессе выполнения playbook.
+
+Теги:
+- clickhouse (установка clickhouse)
+- vector (установка vector)
+- nginx (установка nginx)
+- lighthouse (установка lighthouse) 
+```
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-03-yandex` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
 ---
